@@ -1,0 +1,50 @@
+:root {
+    --primary-bg: #2A4B7C;
+    --white: #fdfdfd;
+    --transition-speed: 0.9s ease-out;
+}
+
+.custom-card {
+    overflow: hidden;
+    background-color: var(--primary-bg);
+    color: var(--white);
+    transition: background-color var(--transition-speed), color var(--transition-speed);
+}
+
+/* Hover effect */
+.custom-card:hover {
+    background-color: var(--white);
+    color: var(--primary-bg);
+}
+
+/* Smooth icon scaling */
+.custom-card .card-body img {
+    transition: transform var(--transition-speed);
+}
+
+.custom-card:hover .card-body img {
+    transform: scale(0.8);
+}
+
+/* Text transition */
+.card-text {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity var(--transition-speed), max-height var(--transition-speed);
+}
+
+/* Show text on hover */
+.custom-card:hover .card-text {
+    opacity: 1;
+    max-height: 100px;
+}
+
+/* Layout transition */
+.custom-card .card-body {
+    transition: flex-direction var(--transition-speed);
+}
+
+.custom-card:hover .card-body {
+    flex-direction: row !important;
+}
