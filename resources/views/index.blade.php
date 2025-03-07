@@ -5,7 +5,7 @@
 @section('content')
     @include('partials.hero')
     
-    <div class="grid-container">
+    <div class="grid-container"  data-aos="fade-up">
         <!-- First row with meeting image and two cards -->
         <div class="row d-flex justify-content-center align-items-stretch gx-3 gy-3 mb-3">
             <div class="col-lg-6">
@@ -192,7 +192,7 @@
 
 
 @section('why-choose-us')
-<section id="why-choose-us" class="text-center d-flex align-items-center justify-content-center" style="min-height: 67vh;">
+<section id="why-choose-us" data-aos="fade-up" class="text-center d-flex align-items-center justify-content-center" style="min-height: 67vh;">
     <div class="container py-5">
         <div class="row justify-content-center text-center mb-5">
             <div class="col-lg-8">
