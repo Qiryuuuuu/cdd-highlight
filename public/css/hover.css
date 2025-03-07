@@ -1,5 +1,6 @@
 :root {
     --primary-bg: #2A4B7C;
+    --secondary: #E6A71F;
     --white: #fdfdfd;
     --transition-speed: 0.9s ease-out;
 }
@@ -45,6 +46,42 @@
     transition: flex-direction var(--transition-speed);
 }
 
+/* Header row layout */
 .custom-card:hover .card-body {
     flex-direction: row !important;
+}
+
+
+/* Common button styles */
+.custom-btn {
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    text-align: center;
+    padding: 10px 20px; 
+}
+
+/* Primary Button */
+.custom-primary-btn {
+    background-color: var(--primary-bg);
+    color: var(--white);
+    border: none;
+}
+
+.custom-primary-btn:hover,
+.custom-secondary-btn:hover {
+    background-color: var(--secondary);
+    transform: translateY(-2px);
+}
+
+/* Secondary Button */
+.custom-secondary-btn {
+    color: var(--white);
+    border: 2px solid var(--white);
+    background-color: transparent;
+}
+
+.custom-secondary-btn:hover {
+    border: none;
 }
